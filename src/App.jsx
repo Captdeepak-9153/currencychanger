@@ -20,7 +20,8 @@ function App() {
   };
 
   const convert = () => {
-    setConvertedAmount(amount * currencyinfo[to]);
+    setConvertedAmount(amount * currencyinfo[to]),
+    alert(`the converted Round Figure Amount is:-${Math.floor(amount * currencyinfo[to])}`);
   };
   const reset = () => {
     setAmount(0); // Reset the amount to 0
